@@ -6,10 +6,10 @@ interface IDataUnit {
     fun toBytes(): ByteUnit
     fun toKilobytes(): Kilobyte
     fun toMegabytes(): Megabyte
-    fun toGigabytes()
-    fun toTerabytes()
-    fun toPetabytes()
-    fun toExabytes()
+    fun toGigabytes(): Gigabyte
+    fun toTerabytes(): Terabyte
+    fun toPetabytes(): Petabyte
+    fun toExabytes(): Exabyte
 
     override fun toString(): String
     fun format(format: NumberFormat): String
